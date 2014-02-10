@@ -86,6 +86,7 @@
         <span class="small-text">Item ID: <%= params[:item_id] %></span>
         <img src="<%= aws_barcode_url('consignment_items', params[:item_id]) %>" height="50" width="190" alt="Item Barcode">
       </div>
+      <span><%= params[:product_name] %></span>
       <span><%= params[:designer_name] %></span>
       <span><%= params[:item_type_name] %></span>
       <div class="clearfix">
