@@ -90,6 +90,9 @@
       <span><%= params[:designer_name] %></span>
       <span><%= params[:item_type_name] %></span>
       <div class="clearfix">
+        <% if params[:mm_name] %> 
+          <span class="all"><%= params[:mm_name] %></span>
+        <% end %>
         <span class="alr"><%= params[:lead_type] %></span>
         <span><%= "IRP" if params[:room_pic] == 'true' %></span>
       </div>
